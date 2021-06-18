@@ -26,7 +26,7 @@ public class Firefly {
             //Bump a fireflies phase based on its neighbors
             if(!fly.id.equals(this.id)) {
                 float distance = pos.distance(fly.pos);
-                if (distance <= .2f) {
+                if (distance <= .1f) {
 
                     if (fly.phase < phase) {
                         phase -= .00001f;

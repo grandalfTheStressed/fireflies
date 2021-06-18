@@ -20,7 +20,7 @@ public class DrawFliesThread implements Runnable{
     private BufferedImage bufferedImage;
     final Graphics GRAPHICS;
     final int END_INDEX;
-    final int RADIUS = 12;
+    final int RADIUS = 16;
     final int WIDTH;
     final int HEIGHT;
     final double RADIANS;
@@ -56,7 +56,7 @@ public class DrawFliesThread implements Runnable{
             if(brightness == 0)
                 continue;
 
-            for(int tempRadius = 1; tempRadius <= RADIUS; tempRadius++){
+            for(int tempRadius = 1; tempRadius <= RADIUS; tempRadius+=2){
 
                 float alpha = (1 - (float) tempRadius / (float) RADIUS);
                 int tempDiameter = tempRadius * 2;

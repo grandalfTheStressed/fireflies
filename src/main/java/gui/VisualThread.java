@@ -35,7 +35,7 @@ public class VisualThread implements Runnable{
     final double RADIAN_STEP = TAU / 200;
     private int mouseGravity = 0;
 
-    final int AMOUNT_OF_FLIES = 1000;
+    final int AMOUNT_OF_FLIES = 500;
     private Firefly[] fireflies = new Firefly[AMOUNT_OF_FLIES];
 
     Input input = new Input();
