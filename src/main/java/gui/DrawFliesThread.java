@@ -45,7 +45,6 @@ public class DrawFliesThread implements Runnable{
 
     @Override
     public void run() {
-
         for(; startIndex < END_INDEX; startIndex++) {
 
             int flyX = (int) (flies[startIndex].getPos().getX() * WIDTH);
@@ -70,7 +69,6 @@ public class DrawFliesThread implements Runnable{
 
             flies[startIndex].sync(flies, MOUSE_X, MOUSE_Y);
         }
-
     }
 
     public synchronized void start(){
